@@ -1,6 +1,27 @@
 <App>
 	<JavaScript>
 		var unoproj = require('Bolav/UnoProject');
-		console.log("My version is " + unoproj.version);
+		var version = unoproj.version;
+		var version_android = unoproj.version_android;
+		var version_ios = unoproj.version_ios;
+		var title = unoproj.title;
+		var publisher = unoproj.publisher;
+		module.exports = {
+			version: version,
+			version_android,
+			version_ios,
+			title,
+			publisher
+		};
 	</JavaScript>
+	<ClientPanel>
+		<StackPanel Padding="10" ItemSpacing="5">
+			<Text FontSize="20" Value="Unoproj information" Alignment="Center" />
+			<Text Value="Version: {version}" />
+			<Text Value="Version (Android): {version_android}" />
+			<Text Value="Version (iOS): {version_ios}" />
+			<Text Value="Title: &#34;{title}&#34;" />
+			<Text Value="Publisher: &#34;{publisher}&#34;" />
+		</StackPanel>
+	</ClientPanel>
 </App>

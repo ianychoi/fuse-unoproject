@@ -7,6 +7,15 @@
   "Projects": [
       "../src/UnoProject/UnoProject.unoproj"
   ],
+  "Version": "0.5.1",
+  "Android": {
+    "VersionName": "$(Version)"
+  },
+  "iOS": {
+    "BundleVersion": "0.3"
+  },
+  "Title": "Sample App: unoproj info",
+  "Publisher": "My company",
   "Includes": [
     "*"
   ]
